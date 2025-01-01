@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArrayImpQueue/ArrayImpQueue.iml" filepath="$PROJECT_DIR$/ArrayImpQueue/ArrayImpQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayImpStack/ArrayImpStack.iml" filepath="$PROJECT_DIR$/ArrayImpStack/ArrayImpStack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DugumOlusturma/DugumOlusturma.iml" filepath="$PROJECT_DIR$/DugumOlusturma/DugumOlusturma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedListImpQueue/LinkedListImpQueue.iml" filepath="$PROJECT_DIR$/LinkedListImpQueue/LinkedListImpQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedListImpStack/LinkedListImpStack.iml" filepath="$PROJECT_DIR$/LinkedListImpStack/LinkedListImpStack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VeriYapilari.iml" filepath="$PROJECT_DIR$/VeriYapilari.iml" />
+    </modules>
+  </component>
+</project>
