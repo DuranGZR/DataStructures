@@ -56,16 +56,32 @@ class BST {
             // Silinecek düğüm bulundu
             if (root.left == null) return root.right; // Sol alt düğüm boşsa, sağ düğüm döndürülür
             if (root.right == null) return root.left; // Sağ alt düğüm boşsa, sol düğüm döndürülür
-            root.key = minValue(root.right); // Sağ alt ağacın minimum değeri bulunur
+            root.key = minValueRec(root.right); // Sağ alt ağacın minimum değeri bulunur
             root.right = deleteRec(root.right, root.key); // Sağ alt ağaçtan minimum değer silinir
         }
         return root; // Mevcut düğüm döndürülür
     }
 
-    // Sağ alt ağaçtaki minimum değeri bulmak için metot
-    private int minValue(Node root) {
+    // Bütün ağaçtaki minimum değeri bulmak için metot
+    public Integer minValue() {
+        if (root == null) return null; // Ağaç boşsa null döndür
+        return minValueRec(root);
+    }
+
+    private int minValueRec(Node root) {
         while (root.left != null) root = root.left; // Sol alt düğümler boyunca ilerlenir
         return root.key; // Minimum değer döndürülür
+    }
+
+    // Bütün ağaçtaki maksimum değeri bulmak için metot
+    public Integer maxValue() {
+        if (root == null) return null; // Ağaç boşsa null döndür
+        return maxValueRec(root);
+    }
+
+    private int maxValueRec(Node root) {
+        while (root.right != null) root = root.right; // Sağ alt düğümler boyunca ilerlenir
+        return root.key; // Maksimum değer döndürülür
     }
 
     public static void main(String[] args) {
