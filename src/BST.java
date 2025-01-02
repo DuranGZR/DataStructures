@@ -1,18 +1,19 @@
 // Daha kısa bir İkili Arama Ağacı (Binary Search Tree - BST) Java Uygulaması
 
 // Bir düğüm (node) sınıfı tanımlanır. Her düğüm bir anahtar ve iki alt düğüm içerir.
-class Node {
-    int key;
-    Node left, right;
 
-    Node(int key) {
-        this.key = key; // Düğümün anahtar değeri
-        this.left = this.right = null; // Başlangıçta sol ve sağ alt düğümler null
-    }
-}
 
 // İkili Arama Ağacı (Binary Search Tree - BST) ana sınıfı
 class BST {
+    class Node {
+        int key;
+        Node left, right;
+
+        Node(int key) {
+            this.key = key; // Düğümün anahtar değeri
+            this.left = this.right = null; // Başlangıçta sol ve sağ alt düğümler null
+        }
+    }
     private Node root; // Ağacın kök düğümü
 
     // Ağaca yeni bir anahtar eklemek için metot
